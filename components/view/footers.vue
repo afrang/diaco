@@ -28,7 +28,7 @@
           </div>
            <div class="col-sm-5  col-xs-12">
 
-  <div class="boxfooter">
+  <div class="boxfooter">a
 
      <ul class="myfootrtlist" dir='rtl'>
               <li ><a><img src="/asset/pin.svg" width="20px">  <strong v-text="$t('Address')"></strong>: <span v-text="setting.address"></span></a></li>

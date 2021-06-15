@@ -24,7 +24,7 @@
                 <div class="col-sm-6   animate__animated animate__bounce">
                   <a href="/"><img class="mt-3" style="border-radius:5px;" src="/fa.png" height="20"></a>
                   <a href="/en"> <img  class="mt-3" style="border-radius:5px;"   src="/en.png" height="20"></a>
-                  <a href="/fa">   <img  class="mt-3" style="border-radius:5px;"  src="/ar.png" height="20"></a>|
+                  <a href="/ar">   <img  class="mt-3" style="border-radius:5px;"  src="/ar.png" height="20"></a>
                 </div>
               </div>
             </div>
@@ -331,12 +331,12 @@ export default {
       about:{
         en:'Abouten',
         fa:'anoutfa',
-        ar:'anoutfa',
+        ar:'aboutar',
       },
       service:{
         en:'serviceen',
         fa:'servicefa',
-        ar:'servicefa',
+        ar:'servicear',
       },
       media:{
         en:'mediaen',

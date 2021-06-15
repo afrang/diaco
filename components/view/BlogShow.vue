@@ -1,8 +1,7 @@
 <template>
   <div class="container-fluid">
-    <h1 class="text-center" v-text="$t(blog.name)"></h1>
     <hr>
-   
+
     <div class="container">
       <div class="row mt-3" v-if="blog.article!=null">
 

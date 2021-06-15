@@ -9,7 +9,7 @@
     export default {
       name: "aboutus",
       components: {ShowArticle},
-      async asyncData({ app,$axios  }) {
+      async asyncData({ app,$axios,params  }) {
         try {
          let about={
             en: 'service_en',
@@ -17,8 +17,9 @@
               ar: 'service_ar',
           };
 
+        let adddress=app.$url+'article/'+about[params['lang']];
           let abouttext =
-            await  $axios.$get(app.$url+'article/'+about[app.i18n.locale])
+            await  $axios.$get(adddress)
           return {
             abouttext
           }
