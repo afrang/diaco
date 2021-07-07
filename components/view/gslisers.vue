@@ -1,5 +1,6 @@
 <template>
   <div class=" mt-5" v-scrollaniamtion>
+  <pre>{{ items }}</pre>
       <div       class="row m-0 line1" v-if="sliders!=null">
         <div
 
@@ -32,6 +33,13 @@ export default {
   },
   data(){
     return{
+      data:null,
+      langselect:{
+          fa:'boxfa',
+          en:'boxen',
+          ar:'boxar'
+      },
+      items:null,
       sliders: {
         fa:{
           0:{
@@ -56,15 +64,11 @@ export default {
   },
   methods:{
     loadgroup(){
- /*     let that=this;
-      this.$axios.get(this.$url+'pgroup',{
-        params:{
-          lang:that.url
-        }
-      })
+     let that=this;
+      this.$axios.get(this.$url+'slider/'+this.langselect[this.$i18n.locale])
         .then(function (res){
-          that.sliders=res.data;
-        })*/
+          that.items=res.data;
+        })
     }
   },
 

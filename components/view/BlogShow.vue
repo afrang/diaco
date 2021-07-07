@@ -7,7 +7,13 @@
 
 
           <div :key="i" v-for="(item,i) in blog.article.data" class="card col-sm-4 col-xs-12 mt-4" >
-            <img class="imgservice" :src="$storage+'media/Articles/'+item.id+'/orginal.png'">
+<template v-if='item.image==null'>
+ <img class="imgservice" :src="$storage+'media/Articles/'+item.id+'/orginal.png'">
+</template>
+<template v-else>
+ <img class="imgservice" :src="$storage+'media/blog/'+item.id+'/medium/'+item.image">
+</template>
+
             <div class="card-body">
               <h5 class="card-title">{{ item.name }}</h5>
               <a v-if="norreadmore!='true'" :href="'/'+$i18n.locale+'/article/'+item.url" class="btn btn-primary" v-text="$t('readmore')"></a>
