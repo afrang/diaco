@@ -7,19 +7,23 @@ module.exports = {
     },
     1:{
       name:'product',
-      url:'/'+this.$i18n.locale+'/product'
+      url:'/'+this.$i18n.locale+'/product',
+      active:true,
     },
     2:{
       name:'after_sales_service',
-      url:'/'+this.$i18n.locale+'/services'
+      url:'/'+this.$i18n.locale+'/services',
+      active:true,
     },
     3:{
       name:'blog',
-      url:'/'+this.$i18n.locale+'/blog'
+      url:'/'+this.$i18n.locale+'/blog',
+      active:true,
     },
     4:{
       name:'contactus',
-      url:'/'+this.$i18n.locale+'/contactus'
+      url:'/'+this.$i18n.locale+'/contactus',
+      active:true,
     },
   }
 }

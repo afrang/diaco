@@ -37,5 +37,9 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
+  },
+  "server": {
+    "port": 2007,
+    "host": "0.0.0.0"
   }
 }
